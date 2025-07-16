@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Money Egregore: Intention Amplifier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-light">
+
+    <div class="container my-5">
+        <header class="text-center mb-5">
+            <h1 class="display-4" style="font-family: 'Cinzel', serif;">The Money Egregore</h1>
+            <p class="lead" style="font-family: 'Lato', sans-serif;">An Intention Amplifier</p>
+            <p class="text-white-50 mx-auto" style="max-width: 600px;">
+                You are about to interact with a symbolic representation of the collective consciousness of money.
+                This is a tool to align your inner state with the outer flow of abundance.
+                Focus your intention, tune your frequency, and observe the resonance.
+            </p>
+        </header>
+
+        <main class="text-center">
+            <div id="egregore-container" class="mb-4">
+                <img id="egregore-symbol" src="money-egregor.png" alt="The Money Egregore Symbol" class="img-fluid">
+            </div>
+
+            <div id="controls" class="mx-auto" style="max-width: 500px;">
+                <div class="mb-4">
+                    <label for="worthiness" class="form-label" style="font-family: 'Cinzel', serif;">Worthiness</label>
+                    <input type="range" class="form-range" min="1" max="100" value="50" id="worthiness">
+                    <small class="form-text text-white-50">Your inherent right to receive.</small>
+                </div>
+
+                <div class="mb-4">
+                    <label for="flow" class="form-label" style="font-family: 'Cinzel', serif;">Flow</label>
+                    <input type="range" class="form-range" min="1" max="100" value="50" id="flow">
+                    <small class="form-text text-white-50">Your capacity to give and let go.</small>
+                </div>
+
+                <div class="mb-4">
+                    <label for="purpose" class="form-label" style="font-family: 'Cinzel', serif;">Purpose</label>
+                    <input type="range" class="form-range" min="1" max="100" value="50" id="purpose">
+                    <small class="form-text text-white-50">The clarity of your value-driven mission.</small>
+                </div>
+
+                 <div class="mb-4">
+                    <label for="intention" class="form-label" style="font-family: 'Cinzel', serif;">Your Intention</label>
+                    <textarea class="form-control bg-dark text-light" id="intention" rows="3" placeholder="State your mission. What real value will you provide?"></textarea>
+                 </div>
+            </div>
+
+            <button id="sound-toggle" class="btn btn-outline-light mt-3">Activate Resonance</button>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

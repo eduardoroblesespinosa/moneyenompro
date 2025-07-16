@@ -1,0 +1,86 @@
+:root {
+    --egregore-color: #ffd700;
+}
+
+body {
+    background-color: #121212;
+    background-image: url('background-pattern.png');
+    color: #f0f0f0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, .form-label {
+    font-family: 'Cinzel', serif;
+    color: var(--egregore-color);
+}
+
+#egregore-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+#egregore-symbol {
+    max-width: 250px;
+    height: auto;
+    filter: drop-shadow(0 0 15px var(--egregore-color));
+    animation: pulse 3s infinite ease-in-out;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.8;
+        transform: scale(1.0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 0.8;
+        transform: scale(1.0);
+    }
+}
+
+.form-range::-webkit-slider-thumb {
+  background: var(--egregore-color);
+}
+
+.form-range::-moz-range-thumb {
+  background: var(--egregore-color);
+}
+
+.form-range::-ms-thumb {
+  background: var(--egregore-color);
+}
+
+.form-control {
+    background-color: #2a2a2a !important;
+    color: #f0f0f0 !important;
+    border-color: #444;
+}
+
+.form-control:focus {
+    border-color: var(--egregore-color);
+    box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
+}
+
+.btn-outline-light {
+    border-color: var(--egregore-color);
+    color: var(--egregore-color);
+}
+
+.btn-outline-light:hover {
+    background-color: var(--egregore-color);
+    color: #121212;
+    box-shadow: 0 0 10px var(--egregore-color);
+}
+
+.btn-light {
+    background-color: var(--egregore-color);
+    color: #121212;
+    border-color: var(--egregore-color);
+    box-shadow: 0 0 15px var(--egregore-color);
+}
